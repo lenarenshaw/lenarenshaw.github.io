@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>Lena Renshaw</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/jpg" 
+      href="fav.jpg">
+<style>
+body {font-family: "Avenir", sans-serif}
+.but {
+  float: left;
+  display: block;
+  margin-right: 15px;
+}
+
+.half {
+  width: 49%;
+}
+.half-right {
+  float: right;
+  width: 49%;
+}
+.click:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.new-padding {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.tag-padding {
+  float: right;
+}
+@media screen and (max-width: 601px){
+  .half {
+    width: 100%;
+  }
+  .half-right {
+    width: 100%;
+  }
+}
+
+h2 {
+  -webkit-margin-before: 0px;
+}
+h2 > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  color: #000;
+}
+
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+h2 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+p {
+  -webkit-margin-before: 0px;
+}
+p > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+p > a:hover {
+  color: #000;
+}
+
+p > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+p > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+@media screen and (max-width: 601px){
+  .half {
+    width: 100%;
+  }
+  .half-right {
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide"><a href="index.html">LENA RENSHAW</a></h2>
+    <p class="w3-opacity"><i>Brown University Computer Science '20</i></p>
+    <div class="w3-row">
+      <div class="but">
+         <p><a href="index.html">Projects</a></p>
+      </div>
+      <div class="but">
+         <p><a href="about.html">About</a></p>
+      </div>
+      <div class="but">
+        <p><a href="https://www.linkedin.com/in/lenarenshaw/">Linkedin</a></p>
+      </div>
+      <div class="but">
+        <p><a href="mailto:lena_renshaw@brown.edu?subject=hey%20there!">Email</a></p>
+      </div>
+    </div>
+    
+    <hr>
+    <h4>A/B Testing and Project</h4>
+    <div class="new-padding w3-row">
+    <h5>User Testing</h5>
+    <p>As class project, I performed two user interaction tests on two versions of a website: an A/B test and an eye tracking test. View the sites <a href="https://stark-journey-12954.herokuapp.com/">here</a>.</p>
+    <p><i class="w3-opacity">Note: the link randomizes which website version is shown, so reload the page a few times to see both.</i></p>
+    <p>I worked with a group of four to create two versions of a website for an imaginary Memphis Taxi company, using HTML/CSS. The two versions are shown below, with version A (left) being minimalist and compact, and version B being flashy and colorful.</p>
+
+    <img src="img/ab-testing-1.png" class="w3-round w3-margin-bottom half" alt="Random Name">
+
+    <img src="img/ab-testing-2.png" class="w3-round w3-margin-bottom half-right" alt="Random Name">
+
+    <div>
+    <p>We asked classmates to browse both versions of the page as if they were users, collecting data to perform chi-squared tests on <b>click-through rate</b> and <b>return rate</b>, as well as t-tests on <b>time to click</b> and <b>dwell time</b>. All statistical tests found that there was no significant difference between Version A and Version B, except for in time to click. The time to click on Version B is significantly greater than on Version A.</p>
+    <h5>Eye Tracking</h5>
+    <p>
+    We then performed eye tracking tests, then wrote functions in JavaScript to read the data from the camera. We produced two types of displays from this data: a step-by-step replay of the user's gaze (above) and a heatmap.
+    <p>
+    <img src="img/ab-testing-4.png" class="w3-round w3-margin-bottom half" alt="Random Name">
+
+    <img src="img/ab-testing-5.png" class="w3-round w3-margin-bottom half-right" alt="Random Name">
+    <img src="img/ab-testing-6.png" class="w3-round w3-margin-bottom half" alt="Random Name">
+
+    <img src="img/ab-testing-7.png" class="w3-round w3-margin-bottom half-right" alt="Random Name">
+    </div>
+    <h5>Conclusions</h5>
+    <p>
+    Analysis of both types of tests suggested that this fictional Memphis Taxi Company should use Version B as a starting point for the design of their website. Version B had a significantly longer time to click than Version A, which means users stay on the page longer, allowing the company to make more money through ads. Additionally, the eye tracking data suggests that Version B is easer for users to focus on, as the content is centered vertically. Users can focus their gaze on the vertical center of the page and scroll for more content, rather than shifting their gaze around the page.
+    </p>
+    <p>
+    This project allowed me to gain insight into and experience with these two types of user interaction tests. I learned that eye tracking can provide a concrete view into how some users might interact with the page, while A/B tesing allows us to gather more data about many users at once. It is probably beneficial to perform eye tracking tests in the preliminary stages of testing to understand how individual users might interact with the page, then move onto A/B testing when we need to better understand the consumer base as a whole.
+    <p>
+    </div>
+    <div>
+        <p><a href="bujo.html">previous</a>/<i class="w3-opacity" style="font-style: normal;">next</i></p>
+    </div>
+    <hr>
+    <div class="w3-row" style="padding-top: 32px;">
+      <div class="w3-third">
+        <a href="drones.html"><img src="img/Drone-Photos-19.jpg" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
+        <p style="-webkit-margin-after: 2em;"><a href="drones.html">Drone Course</a></p>
+      </div>
+      <div class="w3-third">
+        <a href="hackatbrown.html"><img src="img/blue-claw.svg" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
+        <p style="-webkit-margin-after: 2em;"><a href="hackatbrown.html">Hack@Brown</a></p>
+      </div>
+      <div class="w3-third">
+        <a href="shell.html"><img src="img/shell.png" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
+        <p style="-webkit-margin-after: 2em;"><a href="shell.html">Unix Shell</a></p>
+      </div>
+      <div class="w3-third">
+        <a href="bujo.html"><img src="img/bujo.png" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
+        <p style="-webkit-margin-after: 2em;"><a href="bujo.html">BujoInspo</a></p>
+      </div>
+      <div class="w3-third">
+        <a href="abtest.html"><img src="img/abtest.png" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
+        <p style="-webkit-margin-after: 2em;"><a href="abtest.html"><b>A/B Testing</b></a></p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="w3-row w3-padding-32">
+      <div class="but">
+        <p>© Lena Renshaw 2017</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
