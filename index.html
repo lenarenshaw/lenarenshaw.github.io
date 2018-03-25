@@ -6,154 +6,215 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
 
 <head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" 
-      type="image/jpg" 
-      href="fav.jpg">
+  <link rel="icon" type="image/jpg" href="img/fav.jpg">
 </head>
-<style>
-body {font-family: "Avenir", sans-serif}
-.but {
-  float: left;
-  display: block;
-  margin-right: 15px;
-}
 
-.click:hover {
-    opacity: 0.7;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
-}
-
-h2 {
-  -webkit-margin-before: 0px;
-}
-h2 > a {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-}
-
-h2 > a:hover {
-  color: #000;
-}
-
-h2 > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-}
-
-h2 > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-}
-
-p {
-  -webkit-margin-before: 0px;
-}
-p > a {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-}
-
-p > a:hover {
-  color: #000;
-}
-
-p > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-}
-
-p > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-}
-
-</style>
 <body>
 
-
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide"><a href="index.html">LENA RENSHAW</a></h2>
-    <p class="w3-opacity"><i>Brown University Computer Science '20</i></p>
-    <div class="w3-row w3-center">
-      <div class="but">
-         <p><a href="index.html"><b>Projects</b></a></p>
+  <div class="w3-content" id="page-content">
+    <div class="w3-container w3-content w3-padding-64" id="page-container">
+      <h2 class="w3-wide"><a href="index.html">LENA RENSHAW</a></h2>
+      <p class="w3-opacity"><i>Developer. New Yorker. Music lover.</i></p>
+      <div class="w3-row w3-center">
+        <div class="sides">
+          <p><a href="https://www.linkedin.com/in/lenarenshaw/">Linkedin</a></p>
+        </div>
+        <div class="sides">
+          <p><a href="https://github.com/lenarenshaw/">Github</a></p>
+        </div>
+        <div class="sides">
+          <p><a href="mailto:lena_renshaw@brown.edu?subject=hey%20there!">Email</a></p>
+        </div>
       </div>
-      <div class="but">
-         <p><a href="about.html">About</a></p>
+
+      <hr>
+      <h2 class="typewrite" data-period="2000" data-type='[ "Hello there!", "I&#39;m Lena.", "I&#39;m a developer.", "I (attempt) to write great code.", "My favorite number is 12.", "I love puppies and beaches." ]'>
+      </h2>
+      <div class="new-padding w3-row">
+        <div class="half">
+          <p>I'm currently a sophomore at <a href="https://www.brown.edu/">Brown University</a> studying computer science. I'm interested in all things software, with a special focus on how we can use technology for social impact. I'm interested in unpacking
+            complex problems and finding elegant solutions.</p>
+          <p>In my free time, I like to explore by going to concerts, surfing, reading, and trying new places to eat.</p>
+
+          <p>I'm always interested in fun new opportunities, and I'd love to hear from you!</p>
+          <p><a href="#education">Learn more →</a></p>
+        </div>
+
+        <div class="half-right">
+          <img src="img/lenadimsum.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width: 100%;">
+          <p>Me, preparing to eat all my favorite things.</p>
+        </div>
+
       </div>
-      <div class="but">
-        <p><a href="https://www.linkedin.com/in/lenarenshaw/">Linkedin</a></p>
+
+      <hr id="education">
+      <h4>Education</h4>
+      <div class="w3-row">
+        <div class="third">
+          <p class="text-paragraph"><b>Brown University</b></p>
+          <p class="text-paragraph w3-opacity"><i>Sc.B. Computer Science '20</i></p>
+        </div>
+        <div class="two-thirds">
+          <p class="text-paragraph">
+            Relevant coursework:
+            <ul>
+              <li>Data structures and algorithms, user interfaces and user experiences, software engineering, systems programming</li>
+            </ul>
+          </p>
+        </div>
       </div>
-      <div class="but">
-        <p><a href="mailto:lena_renshaw@brown.edu?subject=hey%20there!">Email</a></p>
+
+      <hr id="experience">
+      <h4>Experience</h4>
+      <div class="w3-row">
+        <div class="third">
+          <p class="text-paragraph"><b>Brown Computer Science</b></p>
+          <p class="text-paragraph w3-opacity"><i>September 2017-present</i></p>
+        </div>
+        <div class="two-thirds">
+          <p class="text-paragraph">
+            <b>Teaching assistant</b> for the following courses:
+            <ul>
+              <li>(CS1951r) Introduction to robotics</li>
+              <li>(CS0220) Discrete structures and algorithms</li>
+            </ul>
+          </p>
+        </div>
+        <div class="w3-row">
+          <div class="third">
+            <p class="text-paragraph"><b>Hack@Brown</b></p>
+            <p class="w3-opacity"><i>September 2016-present</i></p>
+          </div>
+          <div class="two-thirds">
+            <p class="text-paragraph">
+              <b>Developer</b> and <b>social impact team lead</b> for Brown's annual hackathon. Click <a href="hackatbrown.html">here</a> to see more about my work for the team.</p>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="third">
+            <p class="text-paragraph"><b>Girls Who Code</b></p>
+            <p class="w3-opacity"><i>Summer 2017</i></p>
+          </div>
+          <div class="two-thirds">
+            <p class="text-paragraph">
+              <b>Teaching assistant</b> at
+              <a href="https://www.moodys.com/">Moody's</a> in New York City. Taught 20 high schoolers the fundamentals of computer science through a series of lessons in Python, HTML/CSS/JavaScript, and robotics through a 7-week long intensive <a href="https://girlswhocode.com/">summer program</a>.</p>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <hr id="projects">
+
+        <h4>Projects</h4>
+        <div class="w3-row" id="projects">
+          <div class="w3-third">
+            <a href="drones.html"><img src="img/Drone-Photos-19.jpg" class="w3-round click project-link"></a>
+            <p class="project-text"><a href="drones.html">Drone Course</a></p>
+          </div>
+          <div class="w3-third">
+            <a href="hackatbrown.html"><img src="img/blue-claw.svg" class="w3-round click project-link"></a>
+            <p class="project-text"><a href="hackatbrown.html">Hack@Brown</a></p>
+          </div>
+          <div class="w3-third">
+            <a href="shell.html"><img src="img/shell.png" class="w3-round click project-link"></a>
+            <p class="project-text"><a href="shell.html">Unix Shell</a></p>
+          </div>
+          <div class="w3-third">
+            <a href="bujo.html"><img src="img/bujo.png" class="w3-round click project-link"></a>
+            <p class="project-text"><a href="bujo.html">BujoInspo</a></p>
+          </div>
+          <div class="w3-third">
+            <a href="abtest.html"><img src="img/abtest.png" class="w3-round click project-link"></a>
+            <p class="project-text"><a href="abtest.html">A/B Testing</a></p>
+          </div>
+        </div>
+        <hr>
+
+        <div class="w3-row w3-padding-32">
+          <div class="sides">
+            <p>© Lena Renshaw 2018</p>
+          </div>
+        </div>
+
       </div>
     </div>
-    
-    <hr>
-    <p>Hello! I'm currently a sophomore at <a href="https://www.brown.edu/">Brown University</a> studying applied math and computer science. I'm interested in all things software, with a special focus on how we can use technology for social impact.</p>
-    <p><a href="about.html">Learn More →</a></p>
-    <hr>
-    <h4>Projects</h4>
-    <div class="w3-row" style="padding-top: 32px;">
-      <div class="w3-third">
-        <a href="drones.html"><img src="img/Drone-Photos-19.jpg" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
-        <p style="-webkit-margin-after: 2em;"><a href="drones.html">Drone Course</a></p>
-      </div>
-      <div class="w3-third">
-        <a href="hackatbrown.html"><img src="img/blue-claw.svg" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
-        <p style="-webkit-margin-after: 2em;"><a href="hackatbrown.html">Hack@Brown</a></p>
-      </div>
-      <div class="w3-third">
-        <a href="shell.html"><img src="img/shell.png" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
-        <p style="-webkit-margin-after: 2em;"><a href="shell.html">Unix Shell</a></p>
-      </div>
-      <div class="w3-third">
-        <a href="bujo.html"><img src="img/bujo.png" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
-        <p style="-webkit-margin-after: 2em;"><a href="bujo.html">BujoInspo</a></p>
-      </div>
-      <div class="w3-third">
-        <a href="abtest.html"><img src="img/abtest.png" class="w3-round click" alt="Random Name" style="width:60%; margin-bottom: 4px;"></a>
-        <p style="-webkit-margin-after: 2em;"><a href="abtest.html">A/B Testing</a></p>
-      </div>
-    </div>
-    <hr>
-
-    <div class="w3-row w3-padding-32">
-      <div class="but">
-        <p>© Lena Renshaw 2017</p>
-      </div>
-    </div>
-    </div>
-  </div>
 
 </body>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+  var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+  };
+
+  $(document).on('click', 'a[href^="#"]', function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+  });
+</script>
+
 </html>
