@@ -163,6 +163,12 @@ p > a:hover:before {
   margin-right: 15px;
 }
 
+.sides-right {
+  float: right;
+  display: block;
+  margin-left: 15px;
+}
+
 .half {
   float: left;
   display: block;
