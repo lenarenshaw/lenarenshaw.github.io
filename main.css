@@ -180,6 +180,26 @@ p > a:hover:before {
   width: 45%;
 }
 
+@media only screen and (max-width: 600px)  {
+  .half {
+    width: 100%;
+  }
+  .half-right {
+    width: 100%;
+  }
+  .head {
+    text-align: center;
+  }
+  .sides {
+    float: none;
+  }
+  .sides-right {
+    float: left;
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+
 .third {
   float: left;
   display: block;
@@ -199,6 +219,7 @@ p > a:hover:before {
 }
 #projects {
   padding-top: 16px;
+  text-align: center;
 }
 .project-holder {
   position: relative;
