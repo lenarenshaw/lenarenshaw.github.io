@@ -263,6 +263,12 @@ p > a:hover:before {
     margin-left: 0px;
     margin-right: 15px;
   }
+  #header-div {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .third {
