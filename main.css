@@ -1,19 +1,67 @@
+html {
+  background-color: #f5f5f5;
+}
+
 body {
-  font-family: "Avenir", sans-serif
+  font-family: "Avenir", sans-serif;
+  background-color: white;
+}
+
+#header-div {
+  padding-top: 64px;
+  padding-bottom: 32px;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid transparent;
 }
 
 #page-content {
   max-width:2000px;
-  margin-top:46px
 }
 
 #page-container {
+  padding-top: 32px;
   max-width:800px;
 }
 
 .click:hover {
     opacity: 0.7;
     filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+h4 {
+  -webkit-margin-before: 0px;
+}
+
+h4 > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+h4 > a:hover {
+  color: #000;
+}
+
+h4 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+h4 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
 }
 
 h5 {
@@ -245,14 +293,15 @@ p > a:hover:before {
 
 .project-text {
   -webkit-margin-after: 2em;
-}
-
-.project-text {
-  -webkit-margin-after: 2em;
   width: 80%;
   margin-left: 10%;
   text-align: left;
 }
+
+.page-text {
+  font-size: 18px;
+}
+
 #projects {
   padding-top: 16px;
   text-align: center;
