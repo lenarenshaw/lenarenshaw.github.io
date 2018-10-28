@@ -278,12 +278,12 @@ p > a:hover:before {
 .third {
   float: left;
   display: block;
-  width: 33%;
+  width: 30%;
 }
 .two-thirds {
-  float: right;
+  float: left;
   display: block;
-  width: 66%;
+  width: 60%;
 }
 .zoom {
   transition: all .5s;
