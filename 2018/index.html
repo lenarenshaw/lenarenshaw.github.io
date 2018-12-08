@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Lena Renshaw</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+
+<head profile="http://www.w3.org/2005/10/profile">
+  <link rel="icon" type="image/jpg" href="img/fav.jpg">
+</head>
+
+<body>
+
+  <div id="header-div">
+    <h2 class="head"><b>👋 Hello, world, I'm Lena Renshaw!</b></h2>
+    <h4>👩‍💻 I'm a Brown University junior studying computer science. I'm passionate
+      about using my tech skills to create meaningful social change. This is my
+      website containing some fun information about my life! Feel free to dive on in. 🏊</h4>
+  </div>
+  <div class="w3-content" id="page-content">
+    <div class="w3-container w3-content" id="page-container">
+      <hr id="school">
+      <h4><b>📚 School</b></h4>
+      <p class="page-text">I love my school! At Brown, I'm a software team co-lead for <a href="http://hackatbrown.org">hack@brown</a>,
+      an industry rep for <a href="http://ivyfilmfestival.org/">ivy film festival</a>,
+      and a frequenter of <a href="https://elitephysicaltherapy.com/">physical therapy</a> for my
+      torn ACL. I've also been an undergraduate teaching assistant for <a href="https://cs.brown.edu/courses/csci0220/">various</a>
+      <a href="http://cs.brown.edu/courses/cs1951r/">courses</a>.</p>
+
+      <hr id="work">
+      <h4><b>💼 Work</b></h4>
+      <p class="page-text">In addition to being a full-time student, I've had some work experience. Last summer, I interned as a PM and software engineer at Microsoft. The year prior, I've worked as a teaching assistant at the Girls Who Code summer immersion program.
+        I've also been fortunate to have interned at AllianceBernstein and Honeybee Robotics.</p>
+        <p class="w3-opacity">For privacy reasons, I don't keep my resume online. If you'd like a copy, please <a href="mailto:lena_renshaw@brown.edu?subject=hey%20there!">reach out</a>.</p>
+
+      <hr id="fun">
+      <h4><b>👯 Fun</b></h4>
+      <div class="new-padding w3-row">
+        <div class="half">
+          <p class="page-text">I love my friends and family, and most of my fun time boils down to
+            hanging out with them! I like trying new food, going thrifting, making
+            gains 💪 at the gym, taking naps, reading books, and rewatching TV shows
+            I've already seen.</p>
+            <br>
+            <p class="page-text">My ultimate life goals are to be on the Amazing Race,
+            move to Paris and only eat croissants (and finally master my French),
+            and of course, develop a game-changing product that allows me to be the
+            next Shark on ABC's Shark Tank.</p>
+        </div>
+
+        <div class="half-right">
+          <img src="img/lenadimsum.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width: 100%;">
+          <p>Hey. It's me at my favorite dim sum restaurant.</p>
+        </div>
+      </div>
+      <hr>
+      <p class="page-text"><strong>🎉 Want to know more?</strong> Connect
+      with me on <a href="https://www.linkedin.com/in/lenarenshaw/">linkedin</a> or
+      send me an <a href="mailto:lena_renshaw@brown.edu?subject=hey%20there!">email</a>.</p>
+      <hr>
+
+      <div class="w3-row w3-padding-32">
+        <div class="sides">
+          <p>© <a href="index.html">Lena Renshaw</a> 2018</p>
+        </div>
+        <div class="sides-right">
+          <p><a href="https://www.linkedin.com/in/lenarenshaw/">Linkedin</a></p>
+        </div>
+        <div class="sides-right">
+          <p><a href="https://github.com/lenarenshaw/">Github</a></p>
+        </div>
+        <div class="sides-right">
+          <p><a href="mailto:lena_renshaw@brown.edu?subject=hey%20there!">Email</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+  var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+  };
+
+  $(document).on('click', 'a[href^="#"]', function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+  });
+</script>
+
+</html>
