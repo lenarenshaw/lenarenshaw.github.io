@@ -51,6 +51,7 @@ body {
   margin-top: 10vh;
   margin-left: 5vw;
 }
+
 #computer-info {
   margin-top: 10vh;
 }
@@ -83,6 +84,11 @@ body {
   padding-top: 3vh;
 }
 
+.header-work {
+  width: 30vw;
+  padding-top: 3vh;
+}
+
 #image-content {
   width: calc(200vw/3);
   font-size: 0;
@@ -97,12 +103,40 @@ body {
   top: 0;
   height: fit-content;
   padding-left: 1vw;
+  padding-right: 3vw;
+
+}
+
+#text-content-work {
+  width: 62vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  padding-left: 1vw;
   padding-right: 1vw;
+  padding-bottom: 3vh;
+}
+
+#image-content-work {
+  width: calc(200vw/6);
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+h1 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
 }
 
 h3 {
