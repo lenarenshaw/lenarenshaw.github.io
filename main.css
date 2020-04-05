@@ -1,227 +1,61 @@
-body {
-  margin: 0;
-}
-
-#section1-welcome {
-  height: 100vh;
-  background-image: url(images/clouds.png);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#name-wrapper {
-  height: fit-content;
-}
-
-#name {
-  height: 60vh;
-  margin: 2em;
-  width: auto;
-}
-
-#links {
-  padding-left: 10vw;
-  transition: .5s ease;
-}
-
-.link {
-  width: 20vw;
-  max-height: 15vh;
-  padding-left: 5vw;
-}
-
-.img-link {
-  width: fit-content;
-}
-
-.img-link:hover {
-  opacity: .5;
-  transition: .5s ease;
-}
-
-#section2-computers {
-  height: 100%;
-  display: flex;
-  background-color: #e5f7f9;
-}
-
-#computer-img {
-  width: 40vw;
-  margin-top: 10vh;
-  margin-left: 5vw;
-}
-
-#computer-info {
-  margin-top: 10vh;
-}
-
-.img-container {
+#page-content {
   width: 100vw;
 }
 
-.img-link {
-  width: 33vw;
+#floating-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
-#section3-art {
-  height: 100%;
-  display: flex;
-  background-color: #fce7be;
+#inner-content {
+  width: 50vw;
 }
 
 body {
-  margin: 0;
-}
-
-.item-img {
-  width: calc(75vw/3);
-}
-
-.header {
-  width: 20vw;
-  padding-left: 10vw;
-  padding-top: 3vh;
-}
-
-.header-work {
-  width: 30vw;
-  padding-top: 3vh;
-}
-
-#image-content {
-  width: calc(200vw/3);
-  font-size: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#text-content {
-  width: 31vw;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: fit-content;
-  padding-left: 1vw;
-  padding-right: 3vw;
-
-}
-
-#text-content-work {
-  width: 62vw;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: fit-content;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-bottom: 3vh;
-}
-
-#image-content-work {
-  width: calc(200vw/6);
-  font-size: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-h1 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-}
-
-h3 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  margin-bottom: 0px;
+  background-color: #E7ECEF;
 }
 
 p {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  line-height: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  color: #272932;
 }
 
-.container {
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  color: #272932;
+}
+
+p > a {
   position: relative;
-  width: 30vw;
-  padding: 1vw;
+  color: #000;
+  text-decoration: none;
 }
 
-.big-container {
-  position: relative;
-  width: 62vw;
-  padding: 1vw;
+p > a:hover {
+  color: #000;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
+p > a:before {
+  content: "";
   position: absolute;
-  top: 0;
+  width: 100%;
+  height: 1px;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fbe9f2;
+  background-color: #000;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-  .item-img {
-    width: 50vw;
-  }
-  #text-content {
-    width: 48vw;
-    padding: 0px;
-  }
-  #name {
-    width: 80vw;
-    height: auto;
-    margin-top: 30vh;
-  }
-  .container {
-    width: auto;
-  }
-  #image-content {
-    width: 52vw;
-  }
+p > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
 }
